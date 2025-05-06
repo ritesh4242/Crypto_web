@@ -1,0 +1,128 @@
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 300px;
+  max-width: 90%;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  text-align: center;
+}
+
+.coin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.coin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.coin:hover {
+  background: #2c2c2c;
+}
+
+.coin-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coin img {
+  width: 32px;
+  height: 32px;
+}
+
+.price, .change, .market-cap {
+  width: 150px;
+  text-align: right;
+}
+
+.positive {
+  color: lightgreen;
+}
+
+.negative {
+  color: red;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background-color: #111;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: white;
+}
+
+#modalIcon {
+  width: 50px;
+  height: 50px;
+}
+
+#modalTitle {
+  text-align: center;
+}
+
+.modal img {
+  display: block;
+  margin: 10px auto;
+}
